@@ -41,7 +41,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Fyxx20/Fyxx20/output/github-contribution-grid-snake-dark.svg" width="100%" alt="snake" />
+  <img src="https://raw.githubusercontent.com/Fyxx20/Fyxx20/output/github-contribution-grid-snake-hud.svg" width="100%" alt="snake" />
 </p>
 
 <p align="center">
