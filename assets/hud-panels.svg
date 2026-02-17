@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="210" viewBox="0 0 1200 210" role="img" aria-label="HUD panels">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#04070a"/>
+      <stop offset="1" stop-color="#071013"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .t{font-family:Consolas,ui-monospace,SFMono-Regular,Menlo,Monaco,'Liberation Mono',monospace}
+      .g{fill:#00ff9a}
+      .w{fill:#bfffe6}
+      .d{fill:#9fffd9;opacity:.85}
+      .s{stroke:#00ff9a;stroke-opacity:.45;stroke-width:2;fill:none}
+      .b{fill:url(#bg);stroke:#00ff9a;stroke-opacity:.35;stroke-width:2}
+      .muted{opacity:.55}
+    </style>
+  </defs>
+
+  <rect width="1200" height="210" fill="transparent"/>
+
+  <!-- left panel -->
+  <rect x="30" y="20" width="560" height="170" rx="14" class="b"/>
+  <path d="M50 46 H190" class="s"/>
+  <text x="60" y="54" class="t g" font-size="16" filter="url(#glow)">github://stats</text>
+  <text x="60" y="86" class="t w" font-size="14">SYS: ONLINE</text>
+  <text x="60" y="110" class="t d" font-size="13">commits: streaming</text>
+  <text x="60" y="132" class="t d" font-size="13">repos: indexed</text>
+  <text x="60" y="154" class="t d" font-size="13">ops: monitored</text>
+  <circle cx="530" cy="120" r="34" fill="none" stroke="#00ff9a" stroke-opacity=".25" stroke-width="8"/>
+  <circle cx="530" cy="120" r="34" fill="none" stroke="#00ff9a" stroke-opacity=".85" stroke-width="8" stroke-dasharray="120 220"/>
+  <text x="530" y="126" text-anchor="middle" class="t w" font-size="14">SYNC</text>
+
+  <!-- right panel -->
+  <rect x="610" y="20" width="560" height="170" rx="14" class="b"/>
+  <path d="M630 46 H820" class="s"/>
+  <text x="640" y="54" class="t g" font-size="16" filter="url(#glow)">github://langs</text>
+
+  <!-- tiny bars -->
+  <g class="muted">
+    <rect x="640" y="86" width="360" height="10" rx="5" fill="#0b1f1a" stroke="#00ff9a" stroke-opacity=".25"/>
+    <rect x="640" y="86" width="270" height="10" rx="5" fill="#00ff9a" fill-opacity=".65"/>
+
+    <rect x="640" y="110" width="360" height="10" rx="5" fill="#0b1f1a" stroke="#00ff9a" stroke-opacity=".25"/>
+    <rect x="640" y="110" width="180" height="10" rx="5" fill="#00ff9a" fill-opacity=".45"/>
+
+    <rect x="640" y="134" width="360" height="10" rx="5" fill="#0b1f1a" stroke="#00ff9a" stroke-opacity=".25"/>
+    <rect x="640" y="134" width="110" height="10" rx="5" fill="#00ff9a" fill-opacity=".35"/>
+  </g>
+
+  <text x="1015" y="92" class="t d" font-size="12">TS</text>
+  <text x="1015" y="116" class="t d" font-size="12">JS</text>
+  <text x="1015" y="140" class="t d" font-size="12">OTHER</text>
+
+  <!-- small corner accents -->
+  <path d="M30 60 L30 46 L44 46" class="s"/>
+  <path d="M1170 60 L1170 46 L1156 46" class="s"/>
+  <path d="M30 150 L30 164 L44 164" class="s"/>
+  <path d="M1170 150 L1170 164 L1156 164" class="s"/>
+</svg>
+

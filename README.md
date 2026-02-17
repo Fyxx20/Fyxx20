@@ -3,32 +3,19 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00FF9A&center=true&vCenter=true&width=700&lines=root@sysadmin:~%24+INITIALIZING+SYSTEM+DIAGNOSTICS...;ACCESS_GRANTED;MONITORING+NETWORK+TRAFFIC...;HARDENING+%2F%2F+LOGGING+%2F%2F+DETECTION..." alt="typing" />
+  <img src="https://raw.githubusercontent.com/Fyxx20/Fyxx20/main/assets/terminal-typing.svg" width="100%" alt="" />
 </p>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Fyxx20/Fyxx20/main/assets/cyber-divider.svg" width="100%" alt="" />
 </p>
 
-<div align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=Fyxx20&show_icons=true&hide_title=true&hide_rank=true&include_all_commits=true&count_private=true&bg_color=04070a&title_color=00ff9a&text_color=bfffe6&icon_color=00ff9a&border_color=00ff9a"
-    height="160"
-    alt="stats"
-  />
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Fyxx20&layout=compact&langs_count=8&bg_color=04070a&title_color=00ff9a&text_color=bfffe6&border_color=00ff9a"
-    height="160"
-    alt="langs"
-  />
-</div>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Fyxx20/Fyxx20/main/assets/hud-panels.svg" width="100%" alt="" />
+</p>
 
 <p align="center">
-  <img
-    src="https://github-profile-trophy.vercel.app/?username=Fyxx20&theme=matrix&no-frame=true&no-bg=true&margin-w=10&row=1&column=7"
-    width="100%"
-    alt="trophies"
-  />
+  <img src="https://raw.githubusercontent.com/Fyxx20/Fyxx20/main/assets/hud-trophies.svg" width="100%" alt="" />
 </p>
 
 <p align="center">
