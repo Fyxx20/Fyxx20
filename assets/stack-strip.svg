@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="54" viewBox="0 0 1200 54" role="img" aria-label="stack badges">
+  <defs>
+    <style>
+      .t{font-family:Segoe UI,Arial,sans-serif;font-size:24px;font-weight:700;fill:#000000}
+      .b{fill:#00ff9a;stroke:#00c978;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="1200" height="54" fill="transparent"/>
+
+  <g transform="translate(8,6)">
+    <rect class="b" x="0" y="0" width="108" height="42"/><text class="t" x="54" y="29" text-anchor="middle">Linux</text>
+    <rect class="b" x="114" y="0" width="96" height="42"/><text class="t" x="162" y="29" text-anchor="middle">Bash</text>
+    <rect class="b" x="216" y="0" width="146" height="42"/><text class="t" x="289" y="29" text-anchor="middle">PowerShell</text>
+    <rect class="b" x="368" y="0" width="118" height="42"/><text class="t" x="427" y="29" text-anchor="middle">Docker</text>
+    <rect class="b" x="492" y="0" width="170" height="42"/><text class="t" x="577" y="29" text-anchor="middle">Kubernetes</text>
+    <rect class="b" x="668" y="0" width="120" height="42"/><text class="t" x="728" y="29" text-anchor="middle">Ansible</text>
+    <rect class="b" x="794" y="0" width="146" height="42"/><text class="t" x="867" y="29" text-anchor="middle">Wireshark</text>
+    <rect class="b" x="946" y="0" width="80" height="42"/><text class="t" x="986" y="29" text-anchor="middle">AWS</text>
+    <rect class="b" x="1032" y="0" width="158" height="42"/><text class="t" x="1111" y="29" text-anchor="middle">TypeScript</text>
+  </g>
+</svg>
+
