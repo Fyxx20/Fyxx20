@@ -11,6 +11,14 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+    <linearGradient id="scan" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#00ff9a" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00ff9a" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#00ff9a" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="micro" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#00ff9a" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
     <style>
       .t{font-family:Consolas,ui-monospace,SFMono-Regular,Menlo,Monaco,'Liberation Mono',monospace}
       .g{fill:#00ff9a}
@@ -23,6 +31,7 @@
   </defs>
 
   <rect width="1200" height="210" fill="transparent"/>
+  <rect x="30" y="20" width="1140" height="170" rx="14" fill="url(#micro)"/>
 
   <!-- left panel -->
   <rect x="30" y="20" width="560" height="170" rx="14" class="b"/>
@@ -32,9 +41,12 @@
   <text x="60" y="110" class="t d" font-size="13">commits: streaming</text>
   <text x="60" y="132" class="t d" font-size="13">repos: indexed</text>
   <text x="60" y="154" class="t d" font-size="13">ops: monitored</text>
-  <circle cx="530" cy="120" r="34" fill="none" stroke="#00ff9a" stroke-opacity=".25" stroke-width="8"/>
-  <circle cx="530" cy="120" r="34" fill="none" stroke="#00ff9a" stroke-opacity=".85" stroke-width="8" stroke-dasharray="120 220"/>
+  <circle cx="530" cy="120" r="34" fill="none" stroke="#00ff9a" stroke-opacity=".18" stroke-width="8"/>
+  <circle cx="530" cy="120" r="34" fill="none" stroke="#00ff9a" stroke-opacity=".90" stroke-width="8" stroke-dasharray="120 220">
+    <animate attributeName="stroke-dashoffset" values="0;-340" dur="2.6s" repeatCount="indefinite"/>
+  </circle>
   <text x="530" y="126" text-anchor="middle" class="t w" font-size="14">SYNC</text>
+  <text x="60" y="178" class="t d" font-size="12" opacity="0.70">latency: nominal</text>
 
   <!-- right panel -->
   <rect x="610" y="20" width="560" height="170" rx="14" class="b"/>
@@ -44,13 +56,19 @@
   <!-- tiny bars -->
   <g class="muted">
     <rect x="640" y="86" width="360" height="10" rx="5" fill="#0b1f1a" stroke="#00ff9a" stroke-opacity=".25"/>
-    <rect x="640" y="86" width="270" height="10" rx="5" fill="#00ff9a" fill-opacity=".65"/>
+    <rect x="640" y="86" width="270" height="10" rx="5" fill="#00ff9a" fill-opacity=".65">
+      <animate attributeName="width" values="250;325;270" dur="2.4s" repeatCount="indefinite"/>
+    </rect>
 
     <rect x="640" y="110" width="360" height="10" rx="5" fill="#0b1f1a" stroke="#00ff9a" stroke-opacity=".25"/>
-    <rect x="640" y="110" width="180" height="10" rx="5" fill="#00ff9a" fill-opacity=".45"/>
+    <rect x="640" y="110" width="180" height="10" rx="5" fill="#00ff9a" fill-opacity=".45">
+      <animate attributeName="width" values="160;240;190" dur="2.1s" repeatCount="indefinite"/>
+    </rect>
 
     <rect x="640" y="134" width="360" height="10" rx="5" fill="#0b1f1a" stroke="#00ff9a" stroke-opacity=".25"/>
-    <rect x="640" y="134" width="110" height="10" rx="5" fill="#00ff9a" fill-opacity=".35"/>
+    <rect x="640" y="134" width="110" height="10" rx="5" fill="#00ff9a" fill-opacity=".35">
+      <animate attributeName="width" values="90;150;120" dur="1.8s" repeatCount="indefinite"/>
+    </rect>
   </g>
 
   <text x="1015" y="92" class="t d" font-size="12">TS</text>
@@ -62,5 +80,11 @@
   <path d="M1170 60 L1170 46 L1156 46" class="s"/>
   <path d="M30 150 L30 164 L44 164" class="s"/>
   <path d="M1170 150 L1170 164 L1156 164" class="s"/>
+
+  <!-- scan overlay -->
+  <rect x="30" y="-60" width="1140" height="60" fill="url(#scan)" opacity="0.0">
+    <animate attributeName="y" values="-60;190" dur="3.9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.55;0" dur="3.9s" repeatCount="indefinite"/>
+  </rect>
 </svg>
 

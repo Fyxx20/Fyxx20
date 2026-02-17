@@ -17,10 +17,21 @@
   </defs>
 
   <rect x="30" y="14" width="1140" height="42" rx="12" fill="url(#bg)" stroke="#00ff9a" stroke-opacity=".28" stroke-width="2"/>
-  <text x="60" y="41" class="t" font-size="18" fill="#bfffe6" filter="url(#glow)">
+  <!-- cycling terminal lines -->
+  <text x="60" y="41" class="t" font-size="18" fill="#bfffe6" filter="url(#glow)" opacity="1">
     root@sysadmin:~$ INITIALIZING SYSTEM DIAGNOSTICS...
+    <animate attributeName="opacity" values="1;1;0;0;0;1" dur="8s" repeatCount="indefinite"/>
   </text>
-  <rect x="845" y="27" width="12" height="22" fill="#00ff9a">
+  <text x="60" y="41" class="t" font-size="18" fill="#bfffe6" filter="url(#glow)" opacity="0">
+    root@sysadmin:~$ ACCESS_GRANTED // SESSION: FYXX20
+    <animate attributeName="opacity" values="0;0;1;1;0;0" dur="8s" repeatCount="indefinite"/>
+  </text>
+  <text x="60" y="41" class="t" font-size="18" fill="#bfffe6" filter="url(#glow)" opacity="0">
+    root@sysadmin:~$ MONITORING NETWORK TRAFFIC... OK
+    <animate attributeName="opacity" values="0;0;0;0;1;1" dur="8s" repeatCount="indefinite"/>
+  </text>
+
+  <rect x="980" y="27" width="12" height="22" fill="#00ff9a">
     <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
   </rect>
 </svg>
