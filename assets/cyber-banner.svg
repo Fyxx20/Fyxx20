@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-label="Terminal d'acces systeme - Admin reseaux">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#04070a"/>
+      <stop offset="1" stop-color="#071013"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#00ff9a" stop-opacity="0.10"/>
+      <stop offset="0.5" stop-color="#00ff9a" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#00ff9a" stop-opacity="0.10"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0
+                0 1 0 0 0
+                0 0 0.7 0 0
+                0 0 0 0.6 0" result="greenGlow"/>
+      <feMerge>
+        <feMergeNode in="greenGlow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00ff9a" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="260" fill="url(#bg)"/>
+  <rect width="1200" height="260" fill="url(#grid)"/>
+
+  <!-- top HUD bar -->
+  <rect x="40" y="26" width="1120" height="34" rx="8" fill="#07161a" stroke="#00ff9a" stroke-opacity="0.35"/>
+  <rect x="40" y="26" width="1120" height="34" rx="8" fill="url(#glow)"/>
+
+  <!-- corner accents -->
+  <path d="M40 76 L40 92 L56 92" fill="none" stroke="#00ff9a" stroke-opacity="0.45" stroke-width="2"/>
+  <path d="M1160 76 L1160 92 L1144 92" fill="none" stroke="#00ff9a" stroke-opacity="0.45" stroke-width="2"/>
+  <path d="M40 232 L40 216 L56 216" fill="none" stroke="#00ff9a" stroke-opacity="0.25" stroke-width="2"/>
+  <path d="M1160 232 L1160 216 L1144 216" fill="none" stroke="#00ff9a" stroke-opacity="0.25" stroke-width="2"/>
+
+  <!-- faux waveform -->
+  <path d="M70 185 C 150 120, 240 240, 320 165 S 500 185, 600 150 S 770 180, 900 135 S 1040 195, 1130 150"
+        fill="none" stroke="#00ff9a" stroke-opacity="0.35" stroke-width="3" />
+  <path d="M70 200 C 160 145, 250 230, 330 180 S 510 195, 610 170 S 780 200, 910 160 S 1040 215, 1130 175"
+        fill="none" stroke="#00ff9a" stroke-opacity="0.18" stroke-width="2" />
+
+  <!-- Main title -->
+  <g filter="url(#softGlow)">
+    <text x="600" y="132" text-anchor="middle"
+          font-family="Consolas, ui-monospace, SFMono-Regular, Menlo, Monaco, 'Liberation Mono', monospace"
+          font-size="30" letter-spacing="2" fill="#bfffe6">
+      TERMINAL D'ACCES SYSTEME - ADMIN RESEAUX
+    </text>
+  </g>
+
+  <!-- small status text -->
+  <text x="600" y="50" text-anchor="middle"
+        font-family="Consolas, ui-monospace, SFMono-Regular, Menlo, Monaco, 'Liberation Mono', monospace"
+        font-size="14" letter-spacing="1" fill="#9fffd9" opacity="0.85">
+    SYSTEM SECURE // CONNECTION ENCRYPTED
+  </text>
+</svg>
+
