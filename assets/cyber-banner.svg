@@ -24,10 +24,21 @@
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00ff9a" stroke-opacity="0.08" stroke-width="1"/>
     </pattern>
+    <linearGradient id="scan" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#00ff9a" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00ff9a" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#00ff9a" stop-opacity="0"/>
+    </linearGradient>
   </defs>
 
   <rect width="1200" height="260" fill="url(#bg)"/>
   <rect width="1200" height="260" fill="url(#grid)"/>
+
+  <!-- animated scanline -->
+  <rect x="0" y="-80" width="1200" height="80" fill="url(#scan)" opacity="0.0">
+    <animate attributeName="y" values="-80;260" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.65;0" dur="4.2s" repeatCount="indefinite"/>
+  </rect>
 
   <!-- top HUD bar -->
   <rect x="40" y="26" width="1120" height="34" rx="8" fill="#07161a" stroke="#00ff9a" stroke-opacity="0.35"/>
@@ -44,6 +55,12 @@
         fill="none" stroke="#00ff9a" stroke-opacity="0.35" stroke-width="3" />
   <path d="M70 200 C 160 145, 250 230, 330 180 S 510 195, 610 170 S 780 200, 910 160 S 1040 215, 1130 175"
         fill="none" stroke="#00ff9a" stroke-opacity="0.18" stroke-width="2" />
+
+  <!-- waveform pulse -->
+  <path d="M70 185 C 150 120, 240 240, 320 165 S 500 185, 600 150 S 770 180, 900 135 S 1040 195, 1130 150"
+        fill="none" stroke="#00ff9a" stroke-opacity="0.0" stroke-width="5" filter="url(#softGlow)">
+    <animate attributeName="stroke-opacity" values="0;0.25;0" dur="2.6s" repeatCount="indefinite"/>
+  </path>
 
   <!-- Main title -->
   <g filter="url(#softGlow)">

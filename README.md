@@ -45,5 +45,5 @@
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=48&color=00FF9A&section=footer&text=SYSTEM%20SECURE%20%2F%2F%20CONNECTION%20ENCRYPTED&fontSize=18&fontColor=001b12" width="100%" alt="footer" />
+  <img src="https://raw.githubusercontent.com/Fyxx20/Fyxx20/main/assets/hud-footer.svg" width="100%" alt="" />
 </p>

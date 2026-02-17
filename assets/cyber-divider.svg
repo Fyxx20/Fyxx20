@@ -7,11 +7,24 @@
       <stop offset="0.85" stop-color="#00ff9a" stop-opacity="0.55"/>
       <stop offset="1" stop-color="#00ff9a" stop-opacity="0"/>
     </linearGradient>
+    <filter id="glow" x="-30%" y="-200%" width="160%" height="500%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
   <rect width="1200" height="28" fill="none"/>
   <path d="M40 14 H1160" stroke="url(#g)" stroke-width="2"/>
   <path d="M40 14 h90 l14 -8 h42 l14 8 h810" fill="none" stroke="#00ff9a" stroke-opacity="0.25" stroke-width="2"/>
   <circle cx="60" cy="14" r="3" fill="#00ff9a" fill-opacity="0.85"/>
   <circle cx="1140" cy="14" r="3" fill="#00ff9a" fill-opacity="0.85"/>
+
+  <!-- moving scan dot -->
+  <circle cx="60" cy="14" r="4" fill="#00ff9a" fill-opacity="0.95" filter="url(#glow)">
+    <animate attributeName="cx" values="60;1140;60" dur="3.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
 </svg>
 
