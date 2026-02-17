@@ -27,10 +27,6 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Fyxx20/Fyxx20/main/assets/cyber-divider.svg" width="100%" alt="" />
-</p>
-
-<p align="center">
   <a href="https://fyxxlabs.com">
     <img src="https://raw.githubusercontent.com/Fyxx20/Fyxx20/main/assets/projects-panel.svg" width="100%" alt="mes projets" />
   </a>
