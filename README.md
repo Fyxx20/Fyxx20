@@ -23,7 +23,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Fyxx20/Fyxx20/214cc5980d1de498bf80ae5a7be2ba4e7186a97b/assets/stack-strip.svg" width="100%" alt="" />
+  <img src="https://raw.githubusercontent.com/Fyxx20/Fyxx20/be5a1a12c7c2d93fe09f225a72e7dc98a613b7a0/assets/stack-strip.svg" width="100%" alt="" />
 </p>
 
 <p align="center">
