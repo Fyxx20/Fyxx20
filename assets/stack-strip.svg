@@ -1,22 +1,92 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="54" viewBox="0 0 1200 54" role="img" aria-label="stack badges">
   <defs>
     <style>
-      .t{font-family:Segoe UI,Arial,sans-serif;font-size:24px;font-weight:700;fill:#000000}
+      .t{font-family:Segoe UI,Arial,sans-serif;font-size:20px;font-weight:800;fill:#000000}
+      .t2{font-family:Segoe UI,Arial,sans-serif;font-size:12px;font-weight:900;fill:#000000}
       .b{fill:#00ff9a;stroke:#00c978;stroke-width:2}
+      .i{fill:#000000}
+      .is{stroke:#000000;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
     </style>
   </defs>
   <rect width="1200" height="54" fill="transparent"/>
 
   <g transform="translate(8,6)">
-    <rect class="b" x="0" y="0" width="108" height="42"/><text class="t" x="54" y="29" text-anchor="middle">Linux</text>
-    <rect class="b" x="114" y="0" width="96" height="42"/><text class="t" x="162" y="29" text-anchor="middle">Bash</text>
-    <rect class="b" x="216" y="0" width="146" height="42"/><text class="t" x="289" y="29" text-anchor="middle">PowerShell</text>
-    <rect class="b" x="368" y="0" width="118" height="42"/><text class="t" x="427" y="29" text-anchor="middle">Docker</text>
-    <rect class="b" x="492" y="0" width="170" height="42"/><text class="t" x="577" y="29" text-anchor="middle">Kubernetes</text>
-    <rect class="b" x="668" y="0" width="120" height="42"/><text class="t" x="728" y="29" text-anchor="middle">Ansible</text>
-    <rect class="b" x="794" y="0" width="146" height="42"/><text class="t" x="867" y="29" text-anchor="middle">Wireshark</text>
-    <rect class="b" x="946" y="0" width="80" height="42"/><text class="t" x="986" y="29" text-anchor="middle">AWS</text>
-    <rect class="b" x="1032" y="0" width="158" height="42"/><text class="t" x="1111" y="29" text-anchor="middle">TypeScript</text>
+    <!-- Linux -->
+    <rect class="b" x="0" y="0" width="108" height="42"/>
+    <g transform="translate(10,9)">
+      <ellipse class="i" cx="12" cy="14" rx="7" ry="8"/>
+      <circle class="i" cx="12" cy="5" r="4"/>
+      <ellipse class="i" cx="8" cy="22" rx="3" ry="2"/>
+      <ellipse class="i" cx="16" cy="22" rx="3" ry="2"/>
+    </g>
+    <text class="t" x="42" y="28" text-anchor="start">Linux</text>
+
+    <!-- Bash -->
+    <rect class="b" x="114" y="0" width="96" height="42"/>
+    <g transform="translate(124,9)">
+      <path class="is" d="M4 6 L11 12 L4 18"/>
+      <rect class="i" x="14" y="16" width="8" height="2"/>
+    </g>
+    <text class="t" x="152" y="28" text-anchor="start">Bash</text>
+
+    <!-- PowerShell -->
+    <rect class="b" x="216" y="0" width="146" height="42"/>
+    <g transform="translate(226,9)">
+      <path class="is" d="M4 6 L11 12 L4 18"/>
+      <text class="t2" x="14" y="15">PS</text>
+      <rect class="i" x="14" y="18" width="10" height="2"/>
+    </g>
+    <text class="t" x="258" y="28" text-anchor="start">PowerShell</text>
+
+    <!-- Docker -->
+    <rect class="b" x="368" y="0" width="118" height="42"/>
+    <g transform="translate(378,9)">
+      <rect class="is" x="3" y="6" width="6" height="6"/>
+      <rect class="is" x="11" y="6" width="6" height="6"/>
+      <rect class="is" x="7" y="14" width="6" height="6"/>
+      <path class="is" d="M5 22 H19"/>
+    </g>
+    <text class="t" x="410" y="28" text-anchor="start">Docker</text>
+
+    <!-- Kubernetes -->
+    <rect class="b" x="492" y="0" width="170" height="42"/>
+    <g transform="translate(502,9)">
+      <polygon class="is" points="12,2 20,7 20,17 12,22 4,17 4,7"/>
+      <text class="t2" x="9" y="15">K</text>
+    </g>
+    <text class="t" x="534" y="28" text-anchor="start">Kubernetes</text>
+
+    <!-- Ansible -->
+    <rect class="b" x="668" y="0" width="120" height="42"/>
+    <g transform="translate(678,9)">
+      <circle class="is" cx="12" cy="12" r="10"/>
+      <text class="t2" x="9" y="16">A</text>
+    </g>
+    <text class="t" x="710" y="28" text-anchor="start">Ansible</text>
+
+    <!-- Wireshark -->
+    <rect class="b" x="794" y="0" width="146" height="42"/>
+    <g transform="translate(804,9)">
+      <path class="is" d="M2 16 C 6 10, 10 10, 14 16 S 22 22, 26 16"/>
+      <path class="is" d="M10 18 L14 6 L18 18"/>
+    </g>
+    <text class="t" x="840" y="28" text-anchor="start">Wireshark</text>
+
+    <!-- AWS -->
+    <rect class="b" x="946" y="0" width="80" height="42"/>
+    <g transform="translate(956,9)">
+      <path class="is" d="M6 16 C 4 16, 2 14, 2 12 C 2 10, 4 8, 6 8 C 7 5, 10 3, 13 3 C 17 3, 20 6, 20 10 C 22 10, 24 12, 24 14 C 24 16, 22 18, 20 18 H6"/>
+      <path class="is" d="M6 22 H18"/>
+    </g>
+    <text class="t" x="984" y="28" text-anchor="start">AWS</text>
+
+    <!-- TypeScript -->
+    <rect class="b" x="1032" y="0" width="158" height="42"/>
+    <g transform="translate(1042,9)">
+      <rect class="is" x="2" y="2" width="20" height="20"/>
+      <text class="t2" x="6" y="16">TS</text>
+    </g>
+    <text class="t" x="1074" y="28" text-anchor="start">TypeScript</text>
   </g>
 </svg>
 
