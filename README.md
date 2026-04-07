@@ -39,7 +39,7 @@ No investors. No premium plan. No limits. Just security.
 <p>
   <a href="https://github.com/Fyxx20/FyxxVault"><img src="https://img.shields.io/badge/Source_Code-111827?style=flat-square&logo=github&logoColor=white" /></a>
   <a href="https://fyxxvault.com"><img src="https://img.shields.io/badge/Live_App-00D4FF?style=flat-square&logo=safari&logoColor=white" /></a>
-  <a href="https://chrome.google.com/webstore"><img src="https://img.shields.io/badge/Chrome_Extension-8A5CF6?style=flat-square&logo=googlechrome&logoColor=white" /></a>
+  <a href="https://chromewebstore.google.com/detail/fyxxvault-%E2%80%93-autofill/pacioaldmfoppgnaieonkgjbipdeloll"><img src="https://img.shields.io/badge/Chrome_Extension-8A5CF6?style=flat-square&logo=googlechrome&logoColor=white" /></a>
 </p>
 
 </td>
